@@ -1,0 +1,144 @@
+@font-face{
+  font-family: BlackChancery;
+  src: url(fonts/BLKCHCRY.TTF);
+}
+
+.floater{
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  padding: 5px;
+  border: 5px solid #aaaaaa;
+  border-radius: 100%;
+  transition: all .25s ease-in-out;
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+.slideshow{
+  background-color: rgba(50, 50, 50, .5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  .slide{
+    margin: 0 auto;
+    top:25%;
+    position: relative;
+  }
+}
+body{
+  margin: 0;
+  padding: 0;
+  &.slides{
+    background-color: black;
+  }
+}
+#paige_webb{
+  top: 120px;
+  left: 315px;
+}
+#penelope{
+  top: 260px;
+  left: 625px;
+}
+#shepherd{
+  top: 450px;
+  left: 625px;
+}
+#balloon{
+  top: 400px;
+  left: 350px;
+}
+#penguins{
+  top: 275px;
+  left: 150px;
+}
+#email{
+  top: 200px;
+  left: 500px;
+}
+#video{
+  top: 220px;
+  left: 300px;
+}
+.body{
+  background-image: url("room.jpeg");
+  width: 792px;
+  height: 612px;
+  margin: 0 auto;
+  position: relative;
+}
+.gallery{
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  height: 75%;
+  width: 90%;
+}
+.slide{
+  vertical-align: center;
+  img{
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+  }
+}
+.title{
+  text-align: center;
+  width: 100%;
+  padding-top: 5px;
+  color: white;
+  font-family: BlackChancery;
+  &.black{
+    color: black !important;
+  }
+  &.snug{
+    top: 10px;
+    position: absolute;
+    text-align: left;
+    left: 555px;
+  }
+  &.hash{
+    top:510px;
+    left:60px;
+    color: black;
+    position: absolute;
+    text-align: left;
+  }
+  .back{
+    text-align: left;
+    font-family: Serif;
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    color: white;
+    font-style: normal;
+    text-decoration: none;
+    &:visited{
+      color:white;
+    }
+    &:hover{
+      color:white;
+      transform: scale(1.25);
+      transition: all .25s ease-in-out;
+    }
+    &:active{
+      color:white;
+    }
+  }
+}
+.slick-prev:before{
+  content: "<" !important;
+  height: 100%;
+}
+
+.slick-next:before{
+  content: ">" !important;
+  height: 100%;
+}
+
+h1{
+
+}
