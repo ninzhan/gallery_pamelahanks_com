@@ -72,13 +72,13 @@ body.slides {
   left: 300px;
 }
 
-.body {
-  /*background-image: url("room.jpeg");*/
+/*.body {
+  background-image: url("room.jpeg");
   width: 792px;
   height: 612px;
   margin: 0 auto;
   position: relative;
-}
+}*/
 
 .gallery {
   position: absolute;
