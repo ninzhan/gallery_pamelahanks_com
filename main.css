@@ -73,7 +73,7 @@ body.slides {
 }
 
 .body {
-  background-image: url("room.jpeg");
+  /*background-image: url("room.jpeg");*/
   width: 792px;
   height: 612px;
   margin: 0 auto;
