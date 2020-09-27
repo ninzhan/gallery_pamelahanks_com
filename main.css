@@ -17,31 +17,6 @@
     transform: translateY(-15px);
   }
 }
-.presenting {
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  text-align: center;
-  display: table;
-}
-.presenting h1 {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.vertical-slide {
-  word-wrap: break-word;
-  /**&::after{
-    font-size: 30px;
-    content: "V";
-    position: absolute;
-    top: 90%;
-    right: 50%;
-    animation: bounce 2s infinite;
-  }**/
-}
-
 .titlecard {
   max-width: 100%;
   height: 0;
@@ -52,9 +27,9 @@
 }
 @media only screen and (max-width: 600px), (min-width: 600px) {
   .titlecard {
-    background-image: url("MonstersAnnouncement.jpg");
+    background-image: url("MonstersAnnouncementMobile.jpg");
     background-size: 100%;
-    padding-top: 129.9%;
+    padding-top: 177.9%;
   }
 }
 @media only screen and (min-width: 768px), (min-width: 992px), (min-width: 1200px) {
@@ -62,6 +37,9 @@
     background-image: url("MonstersAnnouncement.jpg");
     background-size: 100%;
     padding-top: 76.93%;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }
 
@@ -72,6 +50,13 @@
 .info h3 h2 h3 {
   text-align: center;
 }
+@media only screen and (min-width: 768px), (min-width: 992px), (min-width: 1200px) {
+  .info {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+
 .floater {
   position: absolute;
   height: 30px;

@@ -19,45 +19,32 @@
   }
 }
 
-.presenting{
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  text-align: center;
-  display: table;
-  h1{
-    display:table-cell;
-    vertical-align: middle;
-  }
-}
+@mixin down-indicate($pct){
 
-.vertical-slide{
-
-  word-wrap: break-word;
-  /**&::after{
+  &::after{
+    color: white;
     font-size: 30px;
     content: "V";
     position: absolute;
-    top: 90%;
+    top: $pct;
     right: 50%;
     animation: bounce 2s infinite;
-  }**/
+  }
 }
 
 .titlecard{
   max-width: 100%;
   height: 0;
-
   background-repeat: no-repeat;
 
   /* Extra small devices (phones, 600px and down) */
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (max-width: 600px),(min-width: 600px)
   {
-    background-image: url("MonstersAnnouncement.jpg");
+    background-image: url("MonstersAnnouncementMobile.jpg");
     background-size: 100%;
-    padding-top: 129.9%;
+    padding-top: 177.9%;
+    //@include down-indicate(100.9%);
   }
 
   /* Medium devices (landscape tablets, 768px and up) */
@@ -66,6 +53,10 @@
     background-image: url("MonstersAnnouncement.jpg");
     background-size: 100%;
     padding-top: 76.93%;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    //@include down-indicate(76.93%);
   }
 }
 .info{
@@ -81,7 +72,8 @@
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px), (min-width: 992px), (min-width: 1200px)
   {
-
+    margin-left: 200px;
+    margin-right: 200px;
   }
 }
 
