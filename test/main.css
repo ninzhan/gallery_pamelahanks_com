@@ -212,44 +212,51 @@ body.slides {
 .header .back:active {
   color: white;
 }
-@media only screen and (min-width: 768px) {
-  .header h1 {
-    font-size: 50px;
-  }
-  .header .back {
-    font-size: 30px;
-  }
-}
 
 .slide {
   height: 100%;
 }
-.slide .inner-slide img {
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
+.slide .inner-slide {
+  margin: 20px;
 }
-.slide .inner-slide .text {
-  color: white;
-  font-size: 40px;
-  margin: 10px;
-  text-align: center;
+.slide .inner-slide img {
+  display: inline-block;
+  float: left;
 }
 @media only screen and (orientation: landscape) {
   .slide .inner-slide img {
+    max-width: 50%;
+    max-height: 100%;
+  }
+}
+@media only screen and (orientation: portrait) {
+  .slide .inner-slide img {
+    max-width: 100%;
+    max-height: 50%;
+    margin: 0 auto;
+  }
+}
+.slide .inner-slide .text {
+  color: white;
+  font-size: 20px;
+  margin: 10px;
+  text-align: center;
+  display: inline-block;
+  float: left;
+}
+@media only screen and (orientation: landscape) {
+  .slide .inner-slide .text {
     max-width: 45%;
     max-height: 100%;
-    display: inline-block;
-    float: left;
-  }
-  .slide .inner-slide .text {
-    max-width: 50%;
-    height: 100%;
-    display: inline-block;
-    float: left;
-    font-size: 20px;
     padding-top: 15%;
-    padding-bottom: 20%;
+  }
+}
+@media only screen and (orientation: portrait) {
+  .slide .inner-slide .text {
+    max-width: 100%;
+    max-height: 45%;
+    margin: 0 auto;
+    font-size: 30px;
   }
 }
 
