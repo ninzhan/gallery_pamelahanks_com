@@ -1,0 +1,286 @@
+@font-face {
+  font-family: BlackChancery;
+  src: url(fonts/BLKCHCRY.TTF);
+}
+@font-face {
+  font-family: Poppins;
+  src: url(fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  src: url(fonts/Poppins-Bold.ttf);
+  font-weight: bold;
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.titlecard {
+  max-width: 100%;
+  height: 0;
+  background-repeat: no-repeat;
+  background-image: url("MonstersAnnouncementMobile.jpg");
+  background-size: 100%;
+  padding-top: 177.9%;
+}
+@media only screen and (min-width: 768px) {
+  .titlecard {
+    background-image: url("MonstersAnnouncement.jpg");
+    background-size: 100%;
+    padding-top: 76.93%;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+.info {
+  margin: 20px;
+  /* Medium devices (landscape tablets, 768px and up) */
+}
+.info h3 h2 h3 {
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .info {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+
+footer {
+  text-align: center;
+  font-size: 10px;
+  color: gray;
+  padding: 10px;
+  display: block;
+}
+
+.gallery-outside-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (min-width: 768px) {
+  .gallery-outside-container {
+    width: 792px;
+    height: 612px;
+    margin: 0 auto;
+  }
+}
+
+.gallery-inside-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (min-width: 768px) {
+  .gallery-inside-container {
+    width: 100%;
+    margin: 0 auto;
+    height: 612px;
+    display: block;
+    position: relative;
+    background-image: url("room.jpg");
+  }
+}
+
+.floater {
+  text-align: center;
+  background-color: black;
+  margin: 10px 0px;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: white;
+  text-decoration: none;
+  font-style: normal;
+  /* Medium devices (landscape tablets, 768px and up) */
+}
+.floater:visited {
+  text-decoration: none !important;
+}
+@media only screen and (min-width: 768px) {
+  .floater {
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding: 5px;
+    border: 5px solid #fc3e19;
+    border-radius: 100%;
+    transition: all 0.25s ease-in-out;
+    color: rgba(0, 0, 0, 0);
+  }
+  .floater:hover {
+    transform: scale(1.1);
+  }
+  .floater#fireplace {
+    top: 120px;
+    left: 312px;
+  }
+  .floater#sneak-peak {
+    top: 240px;
+    left: 595px;
+  }
+  .floater#shepherd {
+    top: 400px;
+    left: 560px;
+  }
+  .floater#couch {
+    top: 325px;
+    left: 310px;
+  }
+  .floater#penguins {
+    top: 221px;
+    left: 190px;
+  }
+  .floater#email {
+    top: 205px;
+    left: 489px;
+  }
+  .floater#events {
+    top: 120px;
+    left: 489px;
+  }
+  .floater#video {
+    top: 220px;
+    left: 300px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+}
+body.slides {
+  background-color: black;
+  color: white;
+}
+
+.body {
+  width: 792px;
+  height: 612px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slides-container {
+  height: auto;
+}
+
+.gallery {
+  margin: 0 100px;
+  display: inline;
+  height: 80%;
+}
+
+.header {
+  text-align: center;
+  padding: 10px;
+}
+.header h1 {
+  font-size: 75px;
+}
+.header .back {
+  text-align: left;
+  position: absolute;
+  left: 25px;
+  top: 15px;
+  color: white;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 40px;
+}
+.header .back:visited {
+  color: white;
+}
+.header .back:hover {
+  color: white;
+  transform: scale(1.25);
+  transition: all 0.25s ease-in-out;
+}
+.header .back:active {
+  color: white;
+}
+@media only screen and (min-width: 768px) {
+  .header h1 {
+    font-size: 30px;
+  }
+  .header .back {
+    font-size: 20px;
+  }
+}
+
+.slide {
+  height: 100%;
+}
+.slide .inner-slide img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+.slide .inner-slide .text {
+  color: white;
+  font-size: 50px;
+  margin: 10px;
+  text-align: center;
+}
+@media only screen and (orientation: landscape), (max-height: 500px) {
+  .slide .inner-slide img {
+    max-width: 45%;
+    max-height: 50%;
+    display: inline-block;
+    float: left;
+  }
+  .slide .inner-slide .text {
+    max-width: 50%;
+    height: 100%;
+    display: inline-block;
+    float: left;
+    font-size: 30px;
+    padding-top: 15%;
+    padding-bottom: 20%;
+  }
+}
+
+.slick-prev {
+  left: -30px !important;
+}
+.slick-prev:before {
+  content: "<" !important;
+  height: 100%;
+  font-weight: bold;
+  margin: -10px;
+}
+@media only screen and (max-width: 600px), (min-width: 600px) {
+  .slick-prev:before {
+    font-size: 50px !important;
+  }
+}
+
+.slick-next {
+  right: -30px !important;
+}
+.slick-next:before {
+  content: ">" !important;
+  height: 100%;
+  font-weight: bold;
+  margin: -10px;
+}
+@media only screen and (max-width: 600px), (min-width: 600px) {
+  .slick-next:before {
+    font-size: 50px !important;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
